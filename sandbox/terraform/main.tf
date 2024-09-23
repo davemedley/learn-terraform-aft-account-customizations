@@ -13,7 +13,7 @@ resource "aws_security_group" "instance" {
 
 # Create an EC2 instance
 resource "aws_instance" "example" {
-  ami			                = "ami-785db401"
+  ami			                = "ami-05134c8ef96964280"
   instance_type           = "t2.micro"
   vpc_security_group_ids  = ["${aws_security_group.instance.id}"]
   
