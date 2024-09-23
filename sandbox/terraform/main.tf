@@ -23,7 +23,7 @@ resource "aws_instance" "example" {
 	      nohup busybox httpd -f -p "${var.server_port}" &
 	      EOF
 			  
-  tags {
+  tags = {
     Name = "terraform-example"
   }
 }
